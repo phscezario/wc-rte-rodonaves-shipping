@@ -1,0 +1,230 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RTE Rodonaves Shipping\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-05 23:30+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.3; wp-6.0.3\n"
+"X-Domain: woocommerce-rte-rodonaves-shipping"
+
+#: views/wc-rte-shipping-user-order-infos.php:5
+msgid " working day(s)."
+msgstr ""
+
+#: includes/wc-rte-shipping-functions.php:34
+msgid " working day(s)</strong>.</p>"
+msgstr ""
+
+#: includes/wc-rte-shipping-functions.php:34
+msgid "<p id=\"show-estimated-shipping-time\">Estimated time: <strong>"
+msgstr ""
+
+#: includes/class-wc-rte-shipping-method.php:138
+msgid "Additional Days"
+msgstr ""
+
+#: includes/class-wc-rte-shipping-method.php:140
+msgid "Additional days to the estimated delivery."
+msgstr ""
+
+#: views/wc-rte-shipping-user-order-infos.php:2
+msgid "Additional information's"
+msgstr ""
+
+#: includes/class-wc-rte-shipping-method.php:123
+msgid "Adds shipping simulator automatically on the product page."
+msgstr ""
+
+#: includes/class-wc-rte-shipping-method.php:71
+msgid "Any Shipping Class"
+msgstr ""
+
+#: includes/class-wc-rte-shipping-method.php:98
+msgid "API RTE Rodonaves login"
+msgstr ""
+
+#: includes/class-wc-rte-shipping-method.php:104
+msgid "API RTE Rodonaves password."
+msgstr ""
+
+#: includes/class-wc-rte-shipping-method.php:110
+msgid "API RTE Rodonaves registered CPF or CNPJ."
+msgstr ""
+
+#: views/wc-rte-shipping-product-page.php:6
+msgid "Calculate"
+msgstr ""
+
+#: includes/class-wc-rte-shipping-method.php:161
+msgid "Debug Log"
+msgstr ""
+
+#: views/wc-rte-shipping-extra-meta-admin.php:42
+msgid "Delivery Time:"
+msgstr ""
+
+#: includes/class-wc-rte-shipping-method.php:90
+msgid "Enable"
+msgstr ""
+
+#: includes/class-wc-rte-shipping-method.php:163
+msgid "Enable logging"
+msgstr ""
+
+#: includes/class-wc-rte-shipping-method.php:121
+msgid "Enable simulator"
+msgstr ""
+
+#: includes/class-wc-rte-shipping-method.php:92
+msgid "Enable this shipping."
+msgstr ""
+
+#: includes/class-wc-rte-shipping-method.php:156
+msgid "Enter an value, e.g. 2.50. Leave blank to disable."
+msgstr ""
+
+#: includes/class-wc-rte-shipping-method.php:147
+msgid "Enter handling fee type, if is percent or solid value."
+msgstr ""
+
+#: woocommerce-rte-rodonaves-shipping.php:46
+msgid "Entry a correct postcode."
+msgstr ""
+
+#: views/wc-rte-shipping-user-order-infos.php:4
+msgid "Estimated shipping time after payment confirmation:"
+msgstr ""
+
+#: woocommerce-rte-rodonaves-shipping.php:44
+msgid "Estimated Time"
+msgstr ""
+
+#: includes/class-wc-rte-shipping-method.php:154
+msgid "Handling Fee"
+msgstr ""
+
+#: includes/class-wc-rte-shipping-method.php:145
+msgid "Handling Fee Type"
+msgstr ""
+
+#: views/wc-rte-shipping-extra-meta-admin.php:22
+msgid "Height:"
+msgstr ""
+
+#: includes/class-wc-rte-shipping-method.php:131
+msgid "If necessary, select a shipping class to apply this method."
+msgstr ""
+
+#: includes/class-wc-rte-shipping-method.php:124
+msgid "If necessary, you can disable and use the shortcode below:"
+msgstr ""
+
+#: views/wc-rte-shipping-extra-meta-admin.php:14
+msgid "Length:"
+msgstr ""
+
+#: includes/class-wc-rte-shipping-method.php:165
+#, php-format
+msgid "Log %s events, such as WebServices requests."
+msgstr ""
+
+#: includes/class-wc-rte-shipping-method.php:96
+msgid "Login"
+msgstr ""
+
+#: woocommerce-rte-rodonaves-shipping.php:48
+msgid ""
+"Maybe you need to calculate shipping again after change product variation or "
+"quantity."
+msgstr ""
+
+#: includes/class-wc-rte-shipping-method.php:72
+msgid "No Shipping Class"
+msgstr ""
+
+#: includes/class-wc-rte-shipping-method.php:113
+msgid "Origin postcode"
+msgstr ""
+
+#: includes/class-wc-rte-shipping-method.php:187
+msgid "Origin postcode is not valid."
+msgstr ""
+
+#: includes/class-wc-rte-shipping-method.php:102
+msgid "Password"
+msgstr ""
+
+#: includes/class-wc-rte-shipping-method.php:150
+msgid "percent"
+msgstr ""
+
+#. Description of the plugin
+msgid "Plugin add RTE Rodonaves Shippging to WooCommerce."
+msgstr ""
+
+#: woocommerce-rte-rodonaves-shipping.php:47
+msgid "Postcode"
+msgstr ""
+
+#: includes/class-wc-rte-shipping-method.php:115
+msgid "Postcode from where the requests are sent."
+msgstr ""
+
+#: includes/class-wc-rte-shipping-method.php:108
+msgid "Registered CPF or CNPJ"
+msgstr ""
+
+#. Name of the plugin
+#: includes/class-wc-rte-shipping-method.php:18
+#: includes/class-wc-rte-shipping-method.php:22
+msgid "RTE Rodonaves Shipping"
+msgstr ""
+
+#: includes/class-wc-rte-shipping-method.php:19
+msgid "RTE Rodonaves shipping integration"
+msgstr ""
+
+#: includes/class-wc-rte-shipping-method.php:129
+msgid "Shipping Class"
+msgstr ""
+
+#: includes/class-wc-rte-shipping-method.php:119
+msgid "Shipping Simulator"
+msgstr ""
+
+#: views/wc-rte-shipping-product-page.php:3
+msgid "Simulate your shipping: "
+msgstr ""
+
+#: includes/class-wc-rte-shipping-method.php:149
+msgid "solid"
+msgstr ""
+
+#: views/wc-rte-shipping-extra-meta-admin.php:38
+msgid "Total Weight:"
+msgstr ""
+
+#: includes/class-wc-rte-shipping-method.php:176
+msgid "View logs."
+msgstr ""
+
+#: views/wc-rte-shipping-extra-meta-admin.php:10
+msgid "Weight:"
+msgstr ""
+
+#: views/wc-rte-shipping-extra-meta-admin.php:18
+msgid "Width:"
+msgstr ""
+
+#: woocommerce-rte-rodonaves-shipping.php:45
+msgid "working day(s)"
+msgstr ""
