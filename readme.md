@@ -37,14 +37,14 @@ Você pode esclarecer suas dúvidas usando:
 
 - Utilizando o nosso [fórum no Github](https://github.com/paulocezario/woocommence-rte-rodonaves-shipping).
 
-### Requerimentos: =
+### Requerimentos:
 
 - [cURL](https://www.php.net/manual/pt_BR/book.curl.php) ativado no PHP (costuma vir ativado por padrão na maioria das hospedagens com PHP).
 
 ### Configurações dos produtos
 
 É necessário configurar o **peso** e **dimensões** de todos os seus produtos, para que a cotação de frete funcione corretamente.
-É possível configurar com produtos do tipo **simples** ou **variável** e não *virtuais* (produtos virtuais são ignorados na hora de cotar o frete).  
+É possível configurar com produtos do tipo **simples** ou **variável** e não *virtuais* ( produtos virtuais são ignorados na hora de cotar o frete ).  
 
 ### Dúvidas frequentes
 
@@ -63,7 +63,7 @@ Aqui uma lista de erros mais comuns:
 - Faltando CEP de origem nos métodos configurados.
 - CEP de origem inválido.
 - Produtos cadastrados sem peso e dimensões
-- Peso e dimensões cadastrados de forma incorreta (por exemplo configurando como 1000kg, pensando que seria 1000g, então verifique as configurações de medidas em `WooCommerce > Configurações > Produtos`).
+- Peso e dimensões cadastrados de forma incorreta (por exemplo configurando como 1000kg, pensando que seria 1000g, então verifique as configurações de medidas em `WooCommerce > Configurações > Produtos` ).
 
 E não se esqueça de verificar o erro ativando a opção de **Log de depuração** nas configurações de cada método de entrega. Imediatamente após ativar o log, basta tentar cotar o frete novamente, fazendo assim o log ser gerado. Você pode acessar todos os logs indo em "WooCommerce" > "Status do sistema" > "Logs".
 
