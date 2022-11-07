@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: RTE Rodonaves Shipping\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-05 23:30+0000\n"
+"POT-Creation-Date: 2022-11-07 18:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -145,6 +145,11 @@ msgstr ""
 msgid ""
 "Maybe you need to calculate shipping again after change product variation or "
 "quantity."
+msgstr ""
+
+#: includes/wc-rte-shipping-functions.php:47
+#: includes/wc-rte-shipping-functions.php:48
+msgid "No information."
 msgstr ""
 
 #: includes/class-wc-rte-shipping-method.php:72

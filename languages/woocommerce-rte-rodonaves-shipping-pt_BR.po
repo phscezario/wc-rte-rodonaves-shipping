@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: RTE Rodonaves Shipping\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-11-05 13:16+0000\n"
-"PO-Revision-Date: 2022-11-05 23:31+0000\n"
+"PO-Revision-Date: 2022-11-07 18:40+0000\n"
 "Last-Translator: \n"
 "Language-Team: Português do Brasil\n"
 "Language: pt_BR\n"
@@ -150,6 +150,11 @@ msgid ""
 msgstr ""
 "Talvez você precisa recalcular a entrega depois de mudar a variação do "
 "produto ou a quantidade."
+
+#: includes/wc-rte-shipping-functions.php:47
+#: includes/wc-rte-shipping-functions.php:48
+msgid "No information."
+msgstr "Sem informação."
 
 #: includes/class-wc-rte-shipping-method.php:72
 msgid "No Shipping Class"

@@ -44,8 +44,8 @@ function show_admin_shipping_infos( $item_id, $item, $product ) {
         $delivery_time      = $order->get_meta('_delivery_time');
 
         if ( is_null( $extra_meta ) || $extra_meta != true ) {
-            $total_weight       = 'No information.';
-            $delivery_time      = 'No information.';
+            $total_weight       = __('No information.', 'woocommerce-rte-rodonaves-shipping' );
+            $delivery_time      = __('No information.', 'woocommerce-rte-rodonaves-shipping' );
         } else {
             $total_weight = get_post_meta( $order->get_id(), '_cart_weight', true ) . get_option('woocommerce_weight_unit');
             $delivery_time = get_post_meta( $order->get_id(), '_delivery_time', true ) . ' day(s)';
