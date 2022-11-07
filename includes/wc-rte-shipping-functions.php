@@ -16,9 +16,9 @@ add_shortcode( 'rte_shipping_in_product_page', 'add_rte_shipping_shipping_simula
 
 
 function add_order_meta( $order, $data ) {
-    $shipping_method = $order->get_shipping_method();
+    $shipping_method = reset( $order->get_items( 'shipping' ) )->get_method_id();
 
-    if ( $shipping_method === 'RTE Rodonaves Shipping' ) {
+    if ( $shipping_method == 'rte-rodonaves' ) {
         $have_meta      = WC()->session->get( 'rte_extra_meta' );
         $delivery_time  = WC()->session->get( 'delivery_time' );
         $weight         = WC()->cart->get_cart_contents_weight();
@@ -36,9 +36,9 @@ function show_shipping_time_on_cart( $method, $index ) {
 
 function show_admin_shipping_infos( $item_id, $item, $product ) {
     $order              = wc_get_order( $item['order_id'] );
-    $shipping_method    = $order->get_shipping_method();
+    $shipping_method    = reset( $order->get_items( 'shipping' ) )->get_method_id();
 
-    if ( $shipping_method === 'RTE Rodonaves Shipping' ) {
+    if ( $shipping_method == 'rte-rodonaves' ) {
         $extra_meta         = $order->get_meta('_rte_extra_meta');
         $total_weight       = $order->get_meta('_cart_weight');
         $delivery_time      = $order->get_meta('_delivery_time');
@@ -57,10 +57,10 @@ function show_admin_shipping_infos( $item_id, $item, $product ) {
 }
 
 function show_client_additional_infos( $order ) {
-    $shipping_method    = $order->get_shipping_method();
+    $shipping_method    = reset( $order->get_items( 'shipping' ) )->get_method_id();
     $delivery_time      = $order->get_meta('_delivery_time');
 
-    if ( $shipping_method === 'RTE Rodonaves Shipping' ) {
+    if ( $shipping_method == 'rte-rodonaves'  ) {
 
         include_once( RTE_SHIPPING_BASE_PATH . '/views/wc-rte-shipping-user-order-infos.php');
     }
