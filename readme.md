@@ -56,6 +56,10 @@ Você precisa ter cadastro junto a RTE Rodonaves e preencher corretamente as inf
 
 Não, no momento ele faz cotações e retorna os valores, para confirmar seu frete é preciso entrar em contato com a RTE Rodonaves e confirmar.
 
+#### Meu site ficou lento com esse plugin?
+
+As requisições à API da RTE Rodonaves podem demorar um pouco para retornar resposta, não sei se eles possuem um limite de banda de acordo com o cadastro do cliente.
+
 ### Error comuns
 
 Aqui uma lista de erros mais comuns:
