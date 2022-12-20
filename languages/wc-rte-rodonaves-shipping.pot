@@ -1,239 +1,235 @@
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: RTE Rodonaves Shipping\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-05 13:16+0000\n"
-"PO-Revision-Date: 2022-11-07 18:40+0000\n"
-"Last-Translator: \n"
-"Language-Team: Português do Brasil\n"
-"Language: pt_BR\n"
+"POT-Creation-Date: 2022-11-07 18:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Loco-Version: 2.6.3; wp-6.0.3\n"
-"X-Domain: woocommerce-rte-rodonaves-shipping\n"
+"X-Domain: wc-rte-rodonaves-shipping"
 
 #: views/wc-rte-shipping-user-order-infos.php:5
 msgid " working day(s)."
-msgstr " dias úteis."
+msgstr ""
 
 #: includes/wc-rte-shipping-functions.php:34
 msgid " working day(s)</strong>.</p>"
-msgstr " dias úteis</strong>.</p>"
+msgstr ""
 
 #: includes/wc-rte-shipping-functions.php:34
 msgid "<p id=\"show-estimated-shipping-time\">Estimated time: <strong>"
-msgstr "<p id=\"show-estimated-shipping-time\">Tempo estimado: <strong>"
+msgstr ""
 
 #: includes/class-wc-rte-shipping-method.php:138
 msgid "Additional Days"
-msgstr "Dias adicionais"
+msgstr ""
 
 #: includes/class-wc-rte-shipping-method.php:140
 msgid "Additional days to the estimated delivery."
-msgstr "Dias adicionais para entrega estimada."
+msgstr ""
 
 #: views/wc-rte-shipping-user-order-infos.php:2
 msgid "Additional information's"
-msgstr "Informações adicionais"
+msgstr ""
 
 #: includes/class-wc-rte-shipping-method.php:123
 msgid "Adds shipping simulator automatically on the product page."
-msgstr "Adicionar simulador de frete automaticamente na página de produto."
+msgstr ""
 
 #: includes/class-wc-rte-shipping-method.php:71
 msgid "Any Shipping Class"
-msgstr "Qualquer Classe de Entrega"
+msgstr ""
 
 #: includes/class-wc-rte-shipping-method.php:98
 msgid "API RTE Rodonaves login"
-msgstr "Login da API da RTE Rodonaves"
+msgstr ""
 
 #: includes/class-wc-rte-shipping-method.php:104
 msgid "API RTE Rodonaves password."
-msgstr "Senha da API RTE Rodonavas."
+msgstr ""
 
 #: includes/class-wc-rte-shipping-method.php:110
 msgid "API RTE Rodonaves registered CPF or CNPJ."
-msgstr "CPF ou CNPJ registrado na API da RTE Rodonaves."
+msgstr ""
 
 #: views/wc-rte-shipping-product-page.php:6
 msgid "Calculate"
-msgstr "Calcular"
+msgstr ""
 
 #: includes/class-wc-rte-shipping-method.php:161
 msgid "Debug Log"
-msgstr "Debug Log"
+msgstr ""
 
 #: views/wc-rte-shipping-extra-meta-admin.php:42
 msgid "Delivery Time:"
-msgstr "Tempo de envio:"
+msgstr ""
 
 #: includes/class-wc-rte-shipping-method.php:90
 msgid "Enable"
-msgstr "Habilitar"
+msgstr ""
 
 #: includes/class-wc-rte-shipping-method.php:163
 msgid "Enable logging"
-msgstr "Habilitar log de errors"
+msgstr ""
 
 #: includes/class-wc-rte-shipping-method.php:121
 msgid "Enable simulator"
-msgstr "Habilitar simulador"
+msgstr ""
 
 #: includes/class-wc-rte-shipping-method.php:92
 msgid "Enable this shipping."
-msgstr "Habilitar esta forma de entrega."
+msgstr ""
 
 #: includes/class-wc-rte-shipping-method.php:156
 msgid "Enter an value, e.g. 2.50. Leave blank to disable."
 msgstr ""
-"Coloque um valor em dinheiro, ex.: 2.50. Deixe em branco para desativar."
 
 #: includes/class-wc-rte-shipping-method.php:147
 msgid "Enter handling fee type, if is percent or solid value."
 msgstr ""
-"Selecione qual calculo para taxa de manuseio, se é porcentagem ou valor "
-"sólido."
 
-#: woocommerce-rte-rodonaves-shipping.php:46
+#: wc-rte-rodonaves-shipping.php:46
 msgid "Entry a correct postcode."
-msgstr "Digite a CEP válido."
+msgstr ""
 
 #: views/wc-rte-shipping-user-order-infos.php:4
 msgid "Estimated shipping time after payment confirmation:"
-msgstr "Tempo estimado para entrega depois da confirmação de pagamento:"
+msgstr ""
 
-#: woocommerce-rte-rodonaves-shipping.php:44
+#: wc-rte-rodonaves-shipping.php:44
 msgid "Estimated Time"
-msgstr "Tempo Estimado"
+msgstr ""
 
 #: includes/class-wc-rte-shipping-method.php:154
 msgid "Handling Fee"
-msgstr "Taxa de manuseio"
+msgstr ""
 
 #: includes/class-wc-rte-shipping-method.php:145
 msgid "Handling Fee Type"
-msgstr "Tipo de taxa de manuseio"
+msgstr ""
 
 #: views/wc-rte-shipping-extra-meta-admin.php:22
 msgid "Height:"
-msgstr "Altura:"
+msgstr ""
 
 #: includes/class-wc-rte-shipping-method.php:131
 msgid "If necessary, select a shipping class to apply this method."
 msgstr ""
-"Caso necessário, selecione uma classe de entrega para aplicar a este método."
 
 #: includes/class-wc-rte-shipping-method.php:124
 msgid "If necessary, you can disable and use the shortcode below:"
-msgstr "Caso necessário, você pode desabilitar e usar o shortcode abaixo:"
+msgstr ""
 
 #: views/wc-rte-shipping-extra-meta-admin.php:14
 msgid "Length:"
-msgstr "Comprimento:"
+msgstr ""
 
 #: includes/class-wc-rte-shipping-method.php:165
+#, php-format
 msgid "Log %s events, such as WebServices requests."
-msgstr "Log %s de eventos, como WebServices requests."
+msgstr ""
 
 #: includes/class-wc-rte-shipping-method.php:96
 msgid "Login"
-msgstr "Login"
+msgstr ""
 
-#: woocommerce-rte-rodonaves-shipping.php:48
+#: wc-rte-rodonaves-shipping.php:48
 msgid ""
 "Maybe you need to calculate shipping again after change product variation or "
 "quantity."
 msgstr ""
-"Talvez você precisa recalcular a entrega depois de mudar a variação do "
-"produto ou a quantidade."
 
 #: includes/wc-rte-shipping-functions.php:47
 #: includes/wc-rte-shipping-functions.php:48
 msgid "No information."
-msgstr "Sem informação."
+msgstr ""
 
 #: includes/class-wc-rte-shipping-method.php:72
 msgid "No Shipping Class"
-msgstr "Nenhuma Classe de Entrega"
+msgstr ""
 
 #: includes/class-wc-rte-shipping-method.php:113
 msgid "Origin postcode"
-msgstr "CEP de origem"
+msgstr ""
 
 #: includes/class-wc-rte-shipping-method.php:187
 msgid "Origin postcode is not valid."
-msgstr "CEP de origem não é válido."
+msgstr ""
 
 #: includes/class-wc-rte-shipping-method.php:102
 msgid "Password"
-msgstr "Senha"
+msgstr ""
 
 #: includes/class-wc-rte-shipping-method.php:150
 msgid "percent"
-msgstr "porcentagem"
+msgstr ""
 
 #. Description of the plugin
 msgid "Plugin add RTE Rodonaves Shippging to WooCommerce."
-msgstr "Plugin adiciona o sistema de frete RTE Rodonaves ao WooCommerce."
+msgstr ""
 
-#: woocommerce-rte-rodonaves-shipping.php:47
+#: wc-rte-rodonaves-shipping.php:47
 msgid "Postcode"
-msgstr "CEP"
+msgstr ""
 
 #: includes/class-wc-rte-shipping-method.php:115
 msgid "Postcode from where the requests are sent."
-msgstr "CEP de onde as solicitações são enviadas."
+msgstr ""
 
 #: includes/class-wc-rte-shipping-method.php:108
 msgid "Registered CPF or CNPJ"
-msgstr "CPF ou CNPJ registrado"
+msgstr ""
 
 #. Name of the plugin
 #: includes/class-wc-rte-shipping-method.php:18
 #: includes/class-wc-rte-shipping-method.php:22
 msgid "RTE Rodonaves Shipping"
-msgstr "RTE Rodonaves Transportadora"
+msgstr ""
 
 #: includes/class-wc-rte-shipping-method.php:19
 msgid "RTE Rodonaves shipping integration"
-msgstr "RTE Rodonaves integração de frete"
+msgstr ""
 
 #: includes/class-wc-rte-shipping-method.php:129
 msgid "Shipping Class"
-msgstr "Classe de Entrega"
+msgstr ""
 
 #: includes/class-wc-rte-shipping-method.php:119
 msgid "Shipping Simulator"
-msgstr "Simulador de Frete"
+msgstr ""
 
 #: views/wc-rte-shipping-product-page.php:3
 msgid "Simulate your shipping: "
-msgstr "Simule seu frete: "
+msgstr ""
 
 #: includes/class-wc-rte-shipping-method.php:149
 msgid "solid"
-msgstr "sólido"
+msgstr ""
 
 #: views/wc-rte-shipping-extra-meta-admin.php:38
 msgid "Total Weight:"
-msgstr "Peso Total:"
+msgstr ""
 
 #: includes/class-wc-rte-shipping-method.php:176
 msgid "View logs."
-msgstr "Ver logs."
+msgstr ""
 
 #: views/wc-rte-shipping-extra-meta-admin.php:10
 msgid "Weight:"
-msgstr "Peso:"
+msgstr ""
 
 #: views/wc-rte-shipping-extra-meta-admin.php:18
 msgid "Width:"
-msgstr "Largura:"
+msgstr ""
 
-#: woocommerce-rte-rodonaves-shipping.php:45
+#: wc-rte-rodonaves-shipping.php:45
 msgid "working day(s)"
-msgstr "dias úteis"
+msgstr ""

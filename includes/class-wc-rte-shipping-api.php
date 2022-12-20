@@ -4,7 +4,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-class RteShippingAPI
+class WRRS_RteShippingAPI
 {
     /**
 	 * API URL.
@@ -35,7 +35,7 @@ class RteShippingAPI
 		$this->username              = $username;
 		$this->password              = $password;
         $this->costumer_registration = $this->only_numbers( $costumer_registration );
-        $this->token                 = get_option( 'RTE_JWT' );
+        $this->token                 = get_option( 'WRRS_RTE_JWT' );
 	}
 
     protected function only_numbers( $string ) {
@@ -43,25 +43,29 @@ class RteShippingAPI
 	}
 
     protected function get_token() {     
-        $access_header = array('Content-Type: application/x-www-form-urlencoded',);
+        $access_header = array( 'Content-Type' => 'application/x-www-form-urlencoded' );
         $access_body = 'auth_type=DEV&grant_type=password&username=' . $this->username . '&password=' . $this->password ;
 
         $response = $this->request_api($this->get_token_url, 'POST', $access_header, $access_body );
 
         if ( array_key_exists('access_token', $response ) ) {
-            update_option( 'RTE_JWT', $response['access_token'] );
-            $this->token = get_option( 'RTE_JWT' );
+            update_option( 'WRRS_RTE_JWT', $response['access_token'] );
+            $this->token = get_option( 'WRRS_RTE_JWT' );
         } else {
             echo 'Authorization has been denied for this request.';
         }
     }
 
     protected function refresh_token( $response ) {
+        if ( $response )  {
+
+        }
+        
         if ( array_key_exists( 'Message', $response ) && $response['Message'] == 'Authorization has been denied for this request.' ) { 
             $this->get_token();
             return true;          
         } elseif ( array_key_exists( 'Message', $response ) ) {
-            echo $response['Message'];
+            echo esc_html( $response['Message'] );
             return true;
         } else {
             return false;
@@ -69,7 +73,7 @@ class RteShippingAPI
     }
 
     protected function request_api( $url, $request_type, $header, $body ) {
-        $curl = curl_init();
+        /* $curl = curl_init();
 
         curl_setopt_array( $curl, [
             CURLOPT_URL             => $url,          
@@ -93,6 +97,42 @@ class RteShippingAPI
             return "cURL Error #:" . array( 'Message' => $err );
         } else {
             return $response;  
+        } */
+
+
+        try {
+
+            if ( $request_type === 'GET' ) {
+
+                $args = array( 'headers' => $header );
+
+                $response = wp_remote_get( $url, $args );
+ 
+            }
+            elseif ( $request_type === 'POST' ) {
+                $args = array(
+                    'body'        => $body,
+                    'timeout'     => '30',
+                    'redirection' => '10',
+                    'httpversion' => '1.1',
+                    'blocking'    => true,
+                    'headers'     => $header,
+                    'cookies'     => array(),
+                );
+
+                $response = wp_remote_post( $url, $args );
+
+            }
+            else {
+                return;
+            }
+
+            $response = wp_remote_retrieve_body( $response );                
+            $response = json_decode( $response, true ); 
+            return $response;
+        } 
+        catch ( Exception $err  ) {
+            return array( 'Message' => 'Exception Error:' . $err );
         }
     }
 
@@ -119,9 +159,9 @@ class RteShippingAPI
 
     public function shipping_simulation( $package = array(), $origin_data ) {
         $header = array(
-            'Accept: application/json',
-            'Authorization: Bearer ' . $this->token,
-            'Content-Type: text/json'
+            'Accept' =>  'application/json',
+            'Authorization' => 'Bearer ' . $this->token,
+            'Content-Type' => 'text/json'
         );
 
         if ( ! $package['destination']['postcode'] ) {
@@ -141,9 +181,9 @@ class RteShippingAPI
 
         if ( $this->refresh_token( $response ) ) { 
             $header = array(
-                'Accept: application/json',
-                'Authorization: Bearer ' . $this->token,
-                'Content-Type: text/json'
+                'Accept' =>  'application/json',
+                'Authorization' => 'Bearer ' . $this->token,
+                'Content-Type' => 'text/json'
             );
             $response = $this->request_api( $this->simulate_url, 'POST', $header, $body );
         }
@@ -156,8 +196,8 @@ class RteShippingAPI
             return null;
         }
         $header = array(
-            'Accept: application/json',
-            'Authorization: Bearer ' . $this->token,
+            'Accept' => 'application/json',
+            'Authorization' => 'Bearer ' . $this->token,
         );
 
         $url = $this->get_city_id_url . '?zipCode=' . $this->only_numbers( $zip_code );
@@ -166,8 +206,8 @@ class RteShippingAPI
 
         if ( $this->refresh_token( $response ) ) { 
             $header = array(
-                'Accept: application/json',
-                'Authorization: Bearer ' . $this->token,
+                'Accept' => 'application/json',
+                'Authorization' => 'Bearer ' . $this->token,
             );
             $response = $this->request_api( $url, 'GET', $header, '' );
         }

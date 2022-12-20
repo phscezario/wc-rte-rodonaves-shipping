@@ -7,7 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-class RteShipping
+class WRRS_RteShipping
 {    
 	/**
 	 * Initialize the plugin public actions.
@@ -34,11 +34,11 @@ class RteShipping
 
     public static function include_methods( $methods ) {
 		// Legacy method.
-		$methods[ 'rte-rodonaves' ] = 'RteShippingMethod';
+		$methods[ 'rte-rodonaves' ] = 'WRRS_RteShippingMethod';
 		return $methods;
 	}
 
 	public static function load_plugin_textdomain() {
-		load_plugin_textdomain( 'woocommerce-rte-rodonaves-shipping', false, dirname( plugin_basename( RTE_SHIPPING_METHOD_FILE ) ) . '/languages/' );
+		load_plugin_textdomain( 'wc-rte-rodonaves-shipping', false, dirname( plugin_basename( WRRS_RTE_SHIPPING_METHOD_FILE ) ) . '/languages/' );
 	}
 }

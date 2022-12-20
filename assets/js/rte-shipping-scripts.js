@@ -6,7 +6,7 @@
     const quantityInput = $( '[id^="quantity_"]' );
     const adversity = $(`<span id="rte-adversity">${rteShippingData.text.adversity}</span>`);
     const error = $(`<span id="rte-error">${rteShippingData.text.error}</span>`);
-    const cookiePostcodeName = 'woocommerce_rte_cache_postcode';
+    const cookiePostcodeName = 'wc_rte_shipping_postcode_cache';
 
 
     let productData = '';
@@ -20,7 +20,7 @@
             handleClick ();
         });
 
-        $( '.single_variation_wrap' ).on( 'show_variation', function ( e, data ) {           
+        $( '.single_variation_wrap' ).on( 'show_variation', function( e, data ) {           
             getProductData( data, data.display_price );
             if ( !$('#rte-adversity').length && $('#rte-price').length ) {
                 resultDiv.append( adversity );
@@ -28,7 +28,7 @@
         });
 
         // Makes "Enter" calculate shipping costs
-		postcodeInput.on('keydown', function (e) {
+		postcodeInput.on('keydown', function(e) {
 		    if (e.keyCode === 13) {
                 handleClick();
 		    	e.preventDefault();

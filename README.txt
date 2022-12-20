@@ -2,8 +2,8 @@
 Contributors: phscezario
 Donate link: https://picpay.me/phscezario
 Tags: shipping, delivery, woocommerce, rte rodonaves
-Requires at least: 4.0
-Tested up to: 5.5
+Requires at least: 6.0
+Tested up to: 6.1
 Stable tag: 0.0.1
 Requires PHP: 7.1
 License: GPLv2 or later
@@ -38,11 +38,7 @@ Requer WooCommerce 3.0 ou posterior para funcionar.
 
 Você pode esclarecer suas dúvidas usando:
 
-- Utilizando o nosso [fórum no Github](https://github.com/paulocezario/woocommence-rte-rodonaves-shipping).
-
-= Requerimentos: =
-
-- [cURL](https://www.php.net/manual/pt_BR/book.curl.php) ativado no PHP (costuma vir ativado por padrão na maioria das hospedagens com PHP).
+- Utilizando o nosso [fórum no Github](https://github.com/paulocezario/wc-rte-rodonaves-shipping).
 
 = Configurações dos produtos =
 
