@@ -31,7 +31,7 @@ function wrrs_add_order_meta( $order, $data ) {
 
 function wrrs_show_shipping_time_on_cart( $method, $index ) {
     $delivery_time = WC()->session->get( 'delivery_time' );
-    echo __( '<p id="show-estimated-shipping-time">Estimated time: <strong>', 'wc-rte-rodonaves-shipping' ) . $delivery_time . __( ' working day(s)</strong>.</p>', 'wc-rte-rodonaves-shipping');
+    include( WRRS_RTE_SHIPPING_BASE_PATH . '/views/wc-rte-shipping-cart-page.php' );
 }
 
 function wrrs_show_admin_shipping_infos( $item_id, $item, $product ) {
@@ -51,7 +51,7 @@ function wrrs_show_admin_shipping_infos( $item_id, $item, $product ) {
             $delivery_time = get_post_meta( $order->get_id(), '_delivery_time', true ) . ' day(s)';
         }
 
-        include( WRRS_RTE_SHIPPING_BASE_PATH . '/views/wc-rte-shipping-extra-meta-admin.php');
+        include( WRRS_RTE_SHIPPING_BASE_PATH . '/views/wc-rte-shipping-extra-meta-admin.php' );
 
     }
 }
@@ -62,7 +62,7 @@ function wrrs_show_client_additional_infos( $order ) {
 
     if ( $shipping_method == 'rte-rodonaves'  ) {
 
-        include_once( WRRS_RTE_SHIPPING_BASE_PATH . '/views/wc-rte-shipping-user-order-infos.php');
+        include_once( WRRS_RTE_SHIPPING_BASE_PATH . '/views/wc-rte-shipping-user-order-infos.php' );
     }
 }
 
@@ -98,7 +98,7 @@ function wrrs_add_rte_shipping_shipping_simulator() {
         );
     }
 
-    include_once( WRRS_RTE_SHIPPING_BASE_PATH . '/views/wc-rte-shipping-product-page.php');
+    include_once( WRRS_RTE_SHIPPING_BASE_PATH . '/views/wc-rte-shipping-product-page.php' );
 }
 
 function wrrs_get_shipping_callback() {
@@ -106,12 +106,15 @@ function wrrs_get_shipping_callback() {
 
         $shipping_method = wrrs_get_current_id();
 
-        // Validated and sanitized in Javascript previously
-        $data = $_POST['data'];
+        $data = wrrs_sanitize_data( $_POST['data'] );
 
-        $response = $shipping_method->calculate_shipping( $data );
-
-        echo json_encode( $response );
+        if ( ! is_null( $data ) ) {
+            $response = $shipping_method->calculate_shipping( $data );
+            echo json_encode( $response );
+        } else {
+            echo __('Wrong data sended.', 'wc-rte-rodonaves-shipping');
+        }
+        
         wp_die(); 
     }
 }
@@ -156,6 +159,43 @@ function wrrs_get_current_id() {
             $class = new WRRS_RteShippingMethod( $instance_id );
             return $class;
         }
+    }
+
+    return null;
+}
+
+function wrrs_sanitize_data( $data = array() ) {
+    if ( is_array( $data ) ) {
+        
+        $model = array( 
+            'amountPackages' => '',
+            'weight'         => '',
+            'length'         => '',
+            'height'         => '',
+            'width'          => '',
+            'postcode'       => '',
+            'price'  => '',
+            'product_page'   => '',
+        );
+
+        $comparator = array_diff_key( $data, $model );
+
+        if ( count( $comparator ) === 0 ) {
+            return array( 
+                'contents' => array(
+                    'AmountPackages' => sanitize_text_field( $data['amountPackages'] ),
+                    'Weight'         => sanitize_text_field( $data['weight'] ),
+                    'Length'         => sanitize_text_field( $data['length'] ),
+                    'Height'         => sanitize_text_field( $data['height'] ),
+                    'Width'          => sanitize_text_field( $data['width'] )
+                ),
+                'destination' => array(
+                    'postcode' => sanitize_text_field( $data['postcode'] )
+                ),
+                'cart_subtotal' => sanitize_text_field( $data['price'] ),
+                'product_page'  => sanitize_text_field( $data['product_page'] )
+            );
+        }       
     }
 
     return null;

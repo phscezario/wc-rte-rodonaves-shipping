@@ -56,11 +56,7 @@ class WRRS_RteShippingAPI
         }
     }
 
-    protected function refresh_token( $response ) {
-        if ( $response )  {
-
-        }
-        
+    protected function refresh_token( $response ) {      
         if ( array_key_exists( 'Message', $response ) && $response['Message'] == 'Authorization has been denied for this request.' ) { 
             $this->get_token();
             return true;          
@@ -73,33 +69,6 @@ class WRRS_RteShippingAPI
     }
 
     protected function request_api( $url, $request_type, $header, $body ) {
-        /* $curl = curl_init();
-
-        curl_setopt_array( $curl, [
-            CURLOPT_URL             => $url,          
-            CURLOPT_RETURNTRANSFER  => true,          
-            CURLOPT_ENCODING        => '',          
-            CURLOPT_MAXREDIRS       => 10,          
-            CURLOPT_TIMEOUT         => 30,          
-            CURLOPT_HTTP_VERSION    => CURL_HTTP_VERSION_1_1,          
-            CURLOPT_CUSTOMREQUEST   => $request_type, 
-            CURLOPT_HTTPHEADER      => $header,         
-            CURLOPT_POSTFIELDS      => $body ,
-        ]);
-
-        $response = curl_exec( $curl );
-        $err = curl_error( $curl );
-        curl_close( $curl );
-
-        $response = json_decode( $response, true );
-
-        if ($err) {
-            return "cURL Error #:" . array( 'Message' => $err );
-        } else {
-            return $response;  
-        } */
-
-
         try {
 
             if ( $request_type === 'GET' ) {

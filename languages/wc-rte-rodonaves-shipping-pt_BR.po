@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: RTE Rodonaves Shipping\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-11-05 13:16+0000\n"
-"PO-Revision-Date: 2022-12-20 22:06+0000\n"
+"PO-Revision-Date: 2022-12-23 21:28+0000\n"
 "Last-Translator: \n"
 "Language-Team: Português do Brasil\n"
 "Language: pt_BR\n"
@@ -15,17 +15,13 @@ msgstr ""
 "X-Loco-Version: 2.6.3; wp-6.0.3\n"
 "X-Domain: wc-rte-rodonaves-shipping\n"
 
+#: views/wc-rte-shipping-cart-page.php:4
+msgid " working day(s)"
+msgstr " dias úteis."
+
 #: views/wc-rte-shipping-user-order-infos.php:5
 msgid " working day(s)."
 msgstr " dias úteis."
-
-#: includes/wc-rte-shipping-functions.php:34
-msgid " working day(s)</strong>.</p>"
-msgstr " dias úteis</strong>.</p>"
-
-#: includes/wc-rte-shipping-functions.php:34
-msgid "<p id=\"show-estimated-shipping-time\">Estimated time: <strong>"
-msgstr "<p id=\"show-estimated-shipping-time\">Tempo estimado: <strong>"
 
 #: includes/class-wc-rte-shipping-method.php:138
 msgid "Additional Days"
@@ -109,6 +105,10 @@ msgstr "Tempo estimado para entrega depois da confirmação de pagamento:"
 #: wc-rte-rodonaves-shipping.php:44
 msgid "Estimated Time"
 msgstr "Tempo Estimado"
+
+#: views/wc-rte-shipping-cart-page.php:2
+msgid "Estimated time: "
+msgstr "Tempo estimado: "
 
 #: includes/class-wc-rte-shipping-method.php:154
 msgid "Handling Fee"
@@ -237,3 +237,7 @@ msgstr "Largura:"
 #: wc-rte-rodonaves-shipping.php:45
 msgid "working day(s)"
 msgstr "dias úteis"
+
+#: includes/wc-rte-shipping-functions.php:115
+msgid "Wrong data sended."
+msgstr "Dados incorretos enviados."

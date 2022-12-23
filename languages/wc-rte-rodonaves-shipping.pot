@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: RTE Rodonaves Shipping\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-07 18:39+0000\n"
+"POT-Creation-Date: 2022-12-23 21:28+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -16,16 +16,12 @@ msgstr ""
 "X-Loco-Version: 2.6.3; wp-6.0.3\n"
 "X-Domain: wc-rte-rodonaves-shipping"
 
+#: views/wc-rte-shipping-cart-page.php:4
+msgid " working day(s)"
+msgstr ""
+
 #: views/wc-rte-shipping-user-order-infos.php:5
 msgid " working day(s)."
-msgstr ""
-
-#: includes/wc-rte-shipping-functions.php:34
-msgid " working day(s)</strong>.</p>"
-msgstr ""
-
-#: includes/wc-rte-shipping-functions.php:34
-msgid "<p id=\"show-estimated-shipping-time\">Estimated time: <strong>"
 msgstr ""
 
 #: includes/class-wc-rte-shipping-method.php:138
@@ -106,6 +102,10 @@ msgstr ""
 
 #: wc-rte-rodonaves-shipping.php:44
 msgid "Estimated Time"
+msgstr ""
+
+#: views/wc-rte-shipping-cart-page.php:2
+msgid "Estimated time: "
 msgstr ""
 
 #: includes/class-wc-rte-shipping-method.php:154
@@ -232,4 +232,8 @@ msgstr ""
 
 #: wc-rte-rodonaves-shipping.php:45
 msgid "working day(s)"
+msgstr ""
+
+#: includes/wc-rte-shipping-functions.php:115
+msgid "Wrong data sended."
 msgstr ""

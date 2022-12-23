@@ -98,17 +98,13 @@
 
     function getProductData( data, price ) {
         productData = {
-            'contents': {
-                'AmountPackages':   getQuantity(),
-                'Weight':           data.weight * getQuantity(),
-                'Length':           data.dimensions.length,
-                'Height':           data.dimensions.height,
-                'Width':            data.dimensions.width,            
-            },
-            'destination': { 
-                'postcode': postcode
-            },
-            'cart_subtotal': price, 
+            'amountPackages':   getQuantity(),
+            'weight':           data.weight * getQuantity(),
+            'length':           data.dimensions.length,
+            'height':           data.dimensions.height,
+            'width':            data.dimensions.width,     
+            'postcode': postcode,
+            'price': price, 
             'product_page': true
         }
     }
