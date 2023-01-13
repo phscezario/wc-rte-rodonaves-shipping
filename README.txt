@@ -17,6 +17,8 @@ Utilize cálculo de frete RTE Rodonaves no WooCommerce.
 
 [RTE Rodonaves](https://rte.com.br/) é uma transportadora brasileira.
 
+Deseja contribuir com esse plugin? Visite: [GitHub](https://github.com/phscezario/wc-rte-rodonaves-shipping).
+
 Este plugin foi desenvolvido sem nenhum incentivo da RTE Rodonaves. O desenvolvedor deste plugin não possui vínculo com esta empresa. Este plugin foi desenvolvido com base na API de integração da RTE Rodonaves.
 
 = Funcionalidades do plugin =
