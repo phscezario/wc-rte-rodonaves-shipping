@@ -1,12 +1,11 @@
 ## Paulo Cezario - RTE Rodonaves shipping for WooCommerce
-Contributors: phscezario  
-Donate link: [PicPay](https://picpay.me/phscezario)  
+Link de doação: [PicPay](https://picpay.me/phscezario)  
 Tags: shipping, delivery, woocommerce, rte rodonaves  
-Requires at least: 6.0  
-Tested up to: 6.1 
-Stable tag: 0.0.1  
-Requires PHP: 7.1  
-License: GPLv2 or later  
+Requer Wordpress: 6.0  
+Testado na versão: 6.1 
+Versão: 0.0.1  
+Requer PHP: 7.1  
+Licença: GPLv2 ou superior  
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Integração entre the RTE Rodonaves and WooCommerce
@@ -17,6 +16,8 @@ Utilize cálculo de frete RTE Rodonaves no WooCommerce.
 [RTE Rodonaves](https://rte.com.br/) é uma transportadora brasileira.
 
 Este plugin foi desenvolvido sem nenhum incentivo da RTE Rodonaves. O desenvolvedor deste plugin não possui vínculo com esta empresa. Este plugin foi desenvolvido com base na API de integração da RTE Rodonaves.
+
+Mantenha esse plugin ativo, faça uma doação: [PicPay](https://picpay.me/phscezario).
 
 ### Funcionalidades do plugin
 
