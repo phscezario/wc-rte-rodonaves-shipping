@@ -1,8 +1,8 @@
 ## Paulo Cezario - RTE Rodonaves shipping for WooCommerce
 
 Link de doação: [PicPay](https://picpay.me/phscezario)  
+Plugin URI: [https://wordpress.org/plugins/wc-rte-rodonaves-shipping/](https://wordpress.org/plugins/wc-rte-rodonaves-shipping/)  
 Tags: shipping, delivery, woocommerce, rte rodonaves  
-Plugin URI: [https://wordpress.org/plugins/wc-rte-rodonaves-shipping/](https://wordpress.org/plugins/wc-rte-rodonaves-shipping/)
 Requer Wordpress: 6.0  
 Testado na versão: 6.2
 Versão: 0.1.0  
