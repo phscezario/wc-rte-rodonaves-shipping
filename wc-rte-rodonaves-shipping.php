@@ -1,14 +1,14 @@
 <?php
 /**
  * Plugin Name: 	RTE Rodonaves Shipping
- * Plugin URI: 	https://wordpress.org/plugins/wc-rte-rodonaves-shipping/
+ * Plugin URI: 		https://wordpress.org/plugins/wc-rte-rodonaves-shipping/
  * Description: 	Plugin add RTE Rodonaves Shippging to WooCommerce.
  * Version: 		0.1.0
- * Author: 		Paulo Cezario
- * License:		GPLv2 or later
+ * Author: 			Paulo Cezario
+ * License:			GPLv2 or later
  * Text Domain: 	wc-rte-rodonaves-shipping
- * Domain Path:  /languages
- * Author URI: 	https://github.com/phscezario/
+ * Domain Path:  	/languages
+ * Author URI: 		https://github.com/phscezario/
  *
  * Este plugin adiciona o sistema de frete RTE Rodonaves a sua loja virtual Wordpress com WooCommerce.
  **/
