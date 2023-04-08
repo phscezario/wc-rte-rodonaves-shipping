@@ -3,8 +3,8 @@ Contributors: phscezario
 Donate link: https://picpay.me/phscezario
 Tags: shipping, delivery, woocommerce, rte rodonaves
 Requires at least: 6.0
-Tested up to: 6.1
-Stable tag: 0.0.1
+Tested up to: 6.2
+Stable tag: 0.1.0
 Requires PHP: 7.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -73,6 +73,12 @@ Aqui uma lista de erros mais comuns:
 E não se esqueça de verificar o erro ativando a opção de **Log de depuração** nas configurações de cada método de entrega. Imediatamente após ativar o log, basta tentar cotar o frete novamente, fazendo assim o log ser gerado. Você pode acessar todos os logs indo em "WooCommerce" > "Status do sistema" > "Logs".
 
 Algumas vezes a API da RTE Rodonaves por ficar indisponível, assim ela pode retornar erro ou apenas não executar o cálculo.
+	
+== Changelog ==
+ 
+= 0.1.0 =
+* Foi ajustado o erro que dava antes de iniciar o plugin, então algumas vezes mesmo configurando não retornava os dados corretos.
+* Foi adicionado botão para conseguir o ID da cidade na pagina de configuração, deixando o plugin mais rápido.
 
 == Screenshots ==
 
