@@ -213,6 +213,10 @@ class WRRS_RTE_Shipping_Method extends WC_Shipping_Method {
 			return;
 		}
 
+		if ( get_option( 'woocommerce_weight_unit' ) === 'g' ) {
+			$package[ 'contents' ][ 'Weight' ] = ( $package[ 'contents' ][ 'Weight' ] / 1000 );
+		}
+
 		$api = new WRRS_RTE_Shipping_API( $this->username, $this->password, $this->costumer_registration );
 
 		$city_data = array(

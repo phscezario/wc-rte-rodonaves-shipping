@@ -75,6 +75,10 @@ Algumas vezes a API da RTE Rodonaves por ficar indisponível, assim ela pode ret
 
 ### Changelog
 
+#### 0.2.0
+
+-   Este plugin agora aceita a medida de peso em kg (quilos) e g (gramas).
+
 #### 0.1.0
 
 -   Foi ajustado o erro que dava antes de iniciar o plugin, então algumas vezes mesmo configurando não retornava os dados corretos.
