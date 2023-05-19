@@ -5,7 +5,7 @@ Plugin URI: [https://wordpress.org/plugins/wc-rte-rodonaves-shipping/](https://w
 Tags: shipping, delivery, woocommerce, rte rodonaves  
 Requer Wordpress: 6.0  
 Testado na versão: 6.2
-Versão: 0.1.0  
+Versão: 0.2.0  
 Requer PHP: 7.1  
 Licença: GPLv2 ou superior  
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
