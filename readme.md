@@ -1,4 +1,4 @@
-# Este plugin está descontinuado, desculpe a todos
+# Este plugin foi descontinuado, desculpe a todos
 
 ## Paulo Cezario - RTE Rodonaves shipping for WooCommerce
 
